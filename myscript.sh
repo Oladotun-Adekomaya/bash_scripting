@@ -34,7 +34,7 @@
 
 # IF STATEMENTS
 
-mynum=300
+#mynum=300
 
 #if [ $mynum -eq 200 ] # equal
 #then
@@ -64,14 +64,49 @@ mynum=300
 
 # A SIMPLE SCRIPT TO CHECK IF A PACKAGE HTOP IS INSTALLED AND INSTALL IT IF NOT FOUND. AND ALSO IMMEDIATELY RUN IT
 
-command=/usr/bin/htop
+#program=htop
 
-if [ -f $command ]
-then
-    echo "$command is available, let's run it..."
-else
-    echo "$command is NOT available, installing it..."
-    sudo apt update && sudo apt install -y htop
-fi
+#if  command -v $program
+#then
+#    echo "$command is available, let's run it..."
+#else
+#    echo "$command is NOT available, installing it..."
+#    sudo apt update && sudo apt install -y $program
+#fi
+#$program
 
-$command
+
+# EXIT CODES - these are used to check if an operation was successful or not. exit code of zero means there was no error, any other number
+# means there was an error when trying to execute the program
+
+#package=htop
+
+#sudo apt install -y $package >> package_install_results.log
+
+#if  [ $? -eq 0 ] #$? is a system variable that stores the exit code of the program/command that just finish running.
+#then
+#   echo "$package has been succesfully installed."
+#   echo "You can view $package here:"
+#   which $package
+#else
+#   echo "$package wasn't successfully installed" >> package_install_failure.log
+#fi
+
+
+# WHILE LOOP
+
+myvar=1
+
+while [ $myvar -le 10 ]
+do
+   echo $myvar
+   myvar=$(($myvar +1))
+   sleep 0.5
+done
+
+#while [ -f ~/Desktop/testfile  ]
+#do
+#   echo "As of $(date) the test file exists"
+#done
+
+#echo "As of $(date), the test file doesn't exist"
