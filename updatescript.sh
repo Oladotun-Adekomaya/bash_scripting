@@ -8,7 +8,8 @@ then
    sudo pacman -Syu
 fi
 
-if grep -q "Ubuntu" $release_file  #the reason this works is because of exit codes. this return an exit code of 0 if successful.
+if grep -q "Ubuntu" $release_file || grep -q "Debian" $release_file
+#the reason this works is because of exit codes. this return an exit code of 0 if successful.
 then
    # The host is based on Debian or Ubuntu,
    # Run the apt version of the command
