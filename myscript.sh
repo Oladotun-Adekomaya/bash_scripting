@@ -97,7 +97,7 @@
 
 myvar=1
 
-while [ $myvar -le 10 ]
+while [[ $myvar -le 10 ]]
 do
    echo $myvar
    myvar=$(($myvar +1))
@@ -107,6 +107,7 @@ done
 #while [ -f ~/Desktop/testfile  ]
 #do
 #   echo "As of $(date) the test file exists"
+#   sleep 5
 #done
 
 #echo "As of $(date), the test file doesn't exist"
