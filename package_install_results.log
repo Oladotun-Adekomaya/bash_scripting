@@ -1,42 +1,0 @@
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following packages were automatically installed and are no longer required:
-  libflashrom1 libftdi1-2 libllvm13 libwpe-1.0-1 libwpebackend-fdo-1.0-1
-  linux-headers-5.15.0-43 linux-headers-5.15.0-43-generic
-  linux-image-5.15.0-43-generic linux-modules-5.15.0-43-generic
-  linux-modules-extra-5.15.0-43-generic mongodb-database-tools mongodb-mongosh
-Use 'sudo apt autoremove' to remove them.
-Suggested packages:
-  lm-sensors
-The following NEW packages will be installed:
-  htop
-0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
-Need to get 128 kB of archives.
-After this operation, 342 kB of additional disk space will be used.
-Get:1 http://ng.archive.ubuntu.com/ubuntu jammy/main amd64 htop amd64 3.0.5-7build2 [128 kB]
-Fetched 128 kB in 2s (56.8 kB/s)
-Selecting previously unselected package htop.
-(Reading database ... dpkg: warning: files list file for package 'libzstd1:amd64' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'libdouble-conversion3:amd64' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'linux-base' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'mediainfo-gui' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'libpackagekit-glib2-18:amd64' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'libpagemaker-0.0-0:amd64' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'kdenlive-data' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'kinit' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'librttopo1:amd64' missing; assuming package has no files currently installed
-dpkg: warning: files list file for package 'vlc-plugin-qt:amd64' missing; assuming package has no files currently installed
-(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 309343 files and directories currently installed.)
-Preparing to unpack .../htop_3.0.5-7build2_amd64.deb ...
-Unpacking htop (3.0.5-7build2) ...
-
-Setting up htop (3.0.5-7build2) ...
-Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
-Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
-Processing triggers for hicolor-icon-theme (0.17-2) ...
-Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
-Processing triggers for man-db (2.10.2-1) ...
-Reading package lists...
-Building dependency tree...
-Reading state information...

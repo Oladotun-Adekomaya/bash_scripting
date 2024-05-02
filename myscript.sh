@@ -95,14 +95,14 @@
 
 # WHILE LOOP
 
-myvar=1
+#myvar=1
 
-while [[ $myvar -le 10 ]]
-do
-   echo $myvar
-   myvar=$(($myvar +1))
-   sleep 0.5
-done
+#while [[ $myvar -le 10 ]]
+#do
+#   echo $myvar
+#   myvar=$(($myvar +1))
+#   sleep 0.5
+#done
 
 #while [ -f ~/Desktop/testfile  ]
 #do
@@ -111,3 +111,39 @@ done
 #done
 
 #echo "As of $(date), the test file doesn't exist"
+
+
+# FOR LOOP
+
+#for n in {1..10}
+#do
+#   echo $n
+#   sleep 1
+#done
+
+#echo "This is outside the script"
+
+# DATA STREAMS
+
+# There are 3 different types of data streams
+# Standard output - this is the normal output that you get when a command is successful. Standard output is a number 1
+# Standard error - this is the output you get when a command returns an error. Standard error is designated by 2. This number can be used
+# during redirection.
+# To redirect standard output we use either > or 1>, for standard error we use 2>, for both we use &>
+# Standard Input - this collects/reads input from the user
+
+# A simple script to collect the name of a user
+
+echo "Please enter your name:"
+read  myname #this line stores whatever the user entered in a variable called myname
+echo "Your name is: $myname"
+
+# FUNCTIONS
+# lets write a function to check for error
+
+check_error(){
+   if [ $? -ne 0]
+   then
+      echo "An error occured. Check your error log"
+   fi
+}
