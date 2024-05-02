@@ -151,6 +151,13 @@
 
 
 # SCHEDULING JOBS
+
 # To schedule jobs, you need to install the at command
-logfile=~/Desktop/bash_scripting/logresult.log
-echo "the script ran at the following time: $(date)" > $logfile 
+#logfile=~/Desktop/bash_scripting/logresult.log
+#echo "the script ran at the following time: $(date)" > $logfile
+
+
+
+# ARGUMENTS
+
+echo "You typed this: $1"
