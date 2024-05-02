@@ -134,16 +134,23 @@
 
 # A simple script to collect the name of a user
 
-echo "Please enter your name:"
-read  myname #this line stores whatever the user entered in a variable called myname
-echo "Your name is: $myname"
+#echo "Please enter your name:"
+#read  myname #this line stores whatever the user entered in a variable called myname
+#echo "Your name is: $myname"
 
 # FUNCTIONS
 # lets write a function to check for error
 
-check_error(){
-   if [ $? -ne 0]
-   then
-      echo "An error occured. Check your error log"
-   fi
-}
+#check_error(){
+#   if [ $? -ne 0]
+#   then
+#      echo "An error occured. Check your error log"
+#   fi
+#}
+
+
+
+# SCHEDULING JOBS
+# To schedule jobs, you need to install the at command
+logfile=~/Desktop/bash_scripting/logresult.log
+echo "the script ran at the following time: $(date)" > $logfile 
